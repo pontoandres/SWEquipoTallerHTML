@@ -34,36 +34,6 @@ section {
     padding: 20px;
 }
 
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-}
-
 footer {
     background-color: #333;
     color: white;
@@ -76,10 +46,30 @@ footer {
 
 .trailer-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .trailer-video, .cast {
     flex: 1;
-    margin: 10px;
+    margin-right: 10px;
+}
+
+#cast-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(5, 1fr); /* 5 filas */
+    gap: 10px;
+}
+
+.photo {
+    width: 100%;
+}
+
+.photo img {
+    width: 50%;
+    height: auto;
+}
+
+#cast-photos h3 {
+    font-size: 16px;
 }
